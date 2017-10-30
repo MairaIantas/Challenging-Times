@@ -1,0 +1,12 @@
+<h1> One Lizards </h1>
+
+<table>
+  <tr>
+  <th>Id</th>
+   <th>Quantity</th>
+   <th>Colour</th>
+ </tr>
+<tr>
+  <%= render partial: 'lizard', object: @lizard,  locals: {display_lizard_link: false} %>
+</tr>
+</table>

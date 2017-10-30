@@ -1,0 +1,14 @@
+<h1> All Lizards </h1>
+
+<table>
+  <tr>
+  <th>ID</th>
+   <th>Quantity</th>
+   <th>Colour</th>
+ </tr>
+<% @lizards.each do |lizard| %>
+<tr>
+  <%= render partial: 'lizard', object: lizard, locals: {display_lizard_link: true} %>
+</tr>
+<% end %>
+</table>

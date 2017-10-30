@@ -1,0 +1,7 @@
+
+<td> <%= lizard.id %></td>
+<td> <%= lizard.qnty %></td>
+<td> <%= lizard.colour %></td>
+<% if display_lizard_link %>
+  <td><%= link_to 'Show', show_path(lizard) %></td>
+<% end %>
